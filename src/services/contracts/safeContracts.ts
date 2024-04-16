@@ -192,9 +192,9 @@ export const getReadOnlyFallbackHandlerContract = (
 ): CompatibilityFallbackHandlerEthersContract => {
   const ethAdapter = createReadOnlyEthersAdapter()
 
-  const singletonDeployment = getFallbackHandlerContractDeployment(chainId);
+  const singletonDeployment = getFallbackHandlerContractDeployment(chainId)
 
-  const contractProps = _getValidatedGetContractProps(chainId, safeVersion);
+  const contractProps = _getValidatedGetContractProps(chainId, safeVersion)
 
   return ethAdapter.getCompatibilityFallbackHandlerContract({
     singletonDeployment,

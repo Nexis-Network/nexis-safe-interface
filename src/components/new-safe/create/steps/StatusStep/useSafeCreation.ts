@@ -98,7 +98,7 @@ export const useSafeCreation = (
         )
 
         const options: DeploySafeProps['options'] = isEIP1559
-          ? { maxFeePerGas: "5000000", maxPriorityFeePerGas: maxPriorityFeePerGas?.toString() }
+          ? { maxFeePerGas: '5000000', maxPriorityFeePerGas: maxPriorityFeePerGas?.toString() }
           : { gasPrice: maxFeePerGas?.toString() }
 
         await createNewSafe(provider, {

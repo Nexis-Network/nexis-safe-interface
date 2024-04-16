@@ -629,8 +629,6 @@ const networksModified = networks.reduce<Chains>((result, { shortName, chainId }
   return result
 }, {})
 
-console.log({networksModified})
+export default networksModified
 
-export default networksModified;
-
-export {networks};
+export { networks }
